@@ -2,11 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    @import url(../css/mainStyle.css);
+    <!-- 两种引入css方法目前都未成功显示背景图片 -->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/mainStyle.css"> -->
+    <style type="text/css">
+        /*@import url(../css/mainStyle.css);*/
+        /*div {
+                width: 1920px;
+                height: 1080px;
+                background-image: url(../two_dimentions/main.jpg);
+            }
+            .box{
+                opacity: 0.5;
+            }*/
+        
+        body {
+
+            overflow: hidden;
+
+        }
+        .background_image{
+            filter:alpha(opacity=50);  
+            -moz-opacity:0.5;  
+            -khtml-opacity: 0.5;  
+            opacity: 0.5;
+            width:100%;
+            position:absolute;
+            background:url(../two_dimentions/main_big.jpg);
+            background-attachment:fixed;
+        }
+    </style>
     <link rel="icon" href="../star.png" type="image/x-icon"/>
     <title>roun1nN's personal webpage.</title>
 </head>
+<!-- <body background="../two_dimentions/main_big.jpg"> -->
 <body>
-    A webpage to learn how to use gitHub for static page.
+    <!-- 设置背景图片及透明度 -->
+    <div id="Layer1" style="position:fixed; left:0px; top:0px; width:100%;opacity:0.5">
+        <img src="../two_dimentions/main_background.png" width="100%" height="100%"/>
+    </div>
+    <div class="background_image"></div>
+    A static webPage using gitHub static page.
+
+    <script type="text/javascript" src="../js/snowDrop.js"></script>
 </body>
 </html>

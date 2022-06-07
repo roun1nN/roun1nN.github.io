@@ -1,17 +1,17 @@
 @charset "utf-8"
 			
-			div {
+		/*div {
+            width: 1920px;
+            height: 1080px;
+            background-image: url(../two_dimentions/main.jpg);
+        }*/
 
-                width: 1920px;
-
-                height: 1080px;
-
-                background-image: url(../two_dimentions/main.jpg);
-
-            }
-
-            .box{
-
-                filter: opacity(0.6);
-
-            }
+        .background_image{
+            filter:alpha(opacity=50);  
+            -moz-opacity:0.5;  
+            -khtml-opacity: 0.5;  
+            opacity: 0.5;
+            position:absolute;
+            background:url(../two_dimentions/main.jpg) ; 
+            background-attachment:fixed;
+        }
