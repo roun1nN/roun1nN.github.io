@@ -59,6 +59,7 @@ var Canvas = function (w, h) {
         }
     }
 
+    <!-- 雪花数量 -->
     var snow = [];
     for (var i = 0; i < 500; i++) {
         setTimeout(function () {
