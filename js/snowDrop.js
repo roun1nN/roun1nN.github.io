@@ -61,7 +61,7 @@ var Canvas = function (w, h) {
 
     <!-- 雪花数量 -->
     var snow = [];
-    for (var i = 0; i < 350; i++) {
+    for (var i = 0; i < 250; i++) {
         setTimeout(function () {
             var oSnow = new Snow();
             oSnow.init();
