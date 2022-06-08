@@ -32,12 +32,13 @@ var Canvas = function (w, h) {
     var Snow = function () {
     }
 
+    <!-- 雪花初始横坐标、初始纵坐标、半径、纵向速度 -->
     Snow.prototype = {
         init: function () {
             this.x = random(0, width);
             this.y = 0;
             this.r = random(1, 5);
-            this.vy = random(3, 5);
+            this.vy = random(2, 4);
         },
 
         draw: function (cxt) {
@@ -58,8 +59,9 @@ var Canvas = function (w, h) {
         }
     }
 
+    <!-- 雪花数量 -->
     var snow = [];
-    for (var i = 0; i < 500; i++) {
+    for (var i = 0; i < 250; i++) {
         setTimeout(function () {
             var oSnow = new Snow();
             oSnow.init();
