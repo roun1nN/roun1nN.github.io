@@ -33,7 +33,7 @@ var Canvas = function (w, h) {
     var Snow = function () {
     }
 
-    <!-- 雪花初始横坐标、初始纵坐标、半径、纵向速度 -->
+    /* 雪花初始横坐标、初始纵坐标、半径、纵向速度 */
     Snow.prototype = {
         init: function () {
             this.x = random(0, width);
@@ -60,7 +60,7 @@ var Canvas = function (w, h) {
         }
     }
 
-    <!-- 雪花数量 -->
+    /* 雪花数量 */
     var snow = [];
     for (var i = 0; i < 250; i++) {
         setTimeout(function () {
