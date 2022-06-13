@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 /*@import url(./css/mainStyle.css);*/
 /*div {
         width: 1920px;
@@ -14,10 +14,9 @@
 }
 div {
     width:100%;
-    font-size:0
+    font: size 60px;
 }
 html, body {
-    background: #000000;
     overflow: hidden;
 
 }
@@ -31,14 +30,37 @@ html, body {
     background:url(./two_dimentions/main_big.jpg);
     background-attachment:fixed;
 }
-.xue{
-    position: absolute;
-    background: url(img/xue.png);
-    background-size: 100% 100%;
-    margin: auto;
-    /* 雪的样式 */
+.stable-nav {
+    /*固定宽度*/
+    width: 5rem;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0; 
+    background: white;
+    box-shadow: 0rem 0.03rem 0.06rem rgba(223, 230, 235, 0.16);
 }
-#hua{
+
+ul>li{
+    /* width: 15%; */
+    border: 1px solid #FFFFFF;
+    height: 70px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 16px;
+    font-family: "微软雅黑 Light";
+}
+ul>li a{
+    display: inline-block;
+    /* padding: 24px 30px; */
+    height: 100%;
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+}
+
+#content-outermost{
+    flex: 1;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -46,9 +68,30 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-
-    /* 暂时设置背景为灰色 */
-    background:#c0c0c0;
-    opacity:0.5;
+    pointer-events:none;
     /* 画布 所有的雪花都花在这里  */
+}
+.bk_img{
+    opacity: 0.4;
+}
+
+#myGithub{
+    float:left;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#github_img{
+    width: 100px;
+    height: 100px;
+}
+.nihong{
+    /* 深色底色，浅色文字，多层浅色文字阴影，弥散大 */
+    color: white;
+    text-shadow: 0px 0px 15px #00FFFF,0px 0px 15px #00FFFF,0px 0px 15px #00FFFF;
+    text-decoration: none;
+    font-family: "微软雅黑 Light";
 }
