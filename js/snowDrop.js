@@ -17,6 +17,7 @@ var Canvas = function (w, h) {
         }
     }
 
+    //这部分导致页面产生左边距和上边距
     var curWinWidth = window.innerWidth,
         curWinHeight = window.innerHeight;
     var oCanvas = new Canvas(curWinWidth, curWinHeight);

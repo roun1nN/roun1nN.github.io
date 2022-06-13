@@ -14,12 +14,16 @@
             .box{
                 opacity: 0.5;
             }*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
         div {
             width:100%;
             font-size:0
         }
-        body {
-
+        html, body {
+            background: #000000;
             overflow: hidden;
 
         }
@@ -33,21 +37,43 @@
             background:url(./two_dimentions/main_big.jpg);
             background-attachment:fixed;
         }
+        .xue{
+            position: absolute;
+            background: url(img/xue.png);
+            background-size: 100% 100%;
+            margin: auto;
+            /* 雪的样式 */
+        }
+        #hua{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            /* 暂时设置背景为灰色 */
+            background:#c0c0c0;
+            opacity:0.5;
+            /* 画布 所有的雪花都花在这里  */
+        }
     </style>
-    <link rel="icon" href="./star.png" type="image/x-icon"/>
+    <!-- 网页标签图标 -->
+    <!-- <link rel="icon" href="https://s3.bmp.ovh/imgs/2022/06/10/4769ba3d5a0ac5da.png" type="image/x-icon"/> -->
     <title>roun1nN's personal webpage.</title>
 </head>
 <!-- <body background="../two_dimentions/main_big.jpg"> -->
 <body>
     <!-- 设置背景图片及透明度 -->
-    <div id="Layer1" style="position:fixed; margin: 0px 0px; padding: 0px 0px; left:0px; top:0px; width:100%;opacity:0.4">
+    <div id="hua" style="position:fixed; margin: 0px 0px; padding: 0px 0px; left:0px; top:0px; width:100%;opacity:0.4">
         <!-- 仓库内图片 -->
         <!-- <img src="./two_dimentions/main_bgi.jpg" width="100%"/> -->
-        <!-- https://www.imgurl.org/ imgURL免费外链图床 -->
+        <!-- https://www.imgurl.org/ imgURL免费外链图床 设置背景 -->
         <img src="https://s3.bmp.ovh/imgs/2022/06/09/edeeb69f027bce36.jpg" width="100%"; display:block; vertical-align:bottom/>
     </div>
     <!-- <div class="background_image"></div> -->
-    A static webPage using gitHub static page.
+    <!-- A static webPage using gitHub static page. -->
 
     <script type="text/javascript" src="./js/snowDrop.js"></script>
 </body>
