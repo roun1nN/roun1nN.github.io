@@ -32,18 +32,19 @@ html, body {
 }
 .stable-nav {
     /*固定宽度*/
-    width: 5rem;
+    width: 6rem;
     height: 100%;
     position: fixed;
     left: 0;
     top: 0; 
-    background: white;
-    box-shadow: 0rem 0.03rem 0.06rem rgba(223, 230, 235, 0.16);
+    /*background: white;*/
+    /* 渐变色 */
+    background: linear-gradient(90deg,rgb(212, 110, 240),rgb(241, 204, 203),rgb(186, 243, 210),rgb(75, 75, 75));
 }
 
 ul>li{
     /* width: 15%; */
-    border: 1px solid #FFFFFF;
+    /*border: 1px solid #FFFFFF;*/
     height: 70px;
     cursor: pointer;
     list-style: none;
@@ -57,6 +58,25 @@ ul>li a{
     color: #000000;
     text-decoration: none;
     list-style: none;
+}
+.nav-icon{
+    height: 18px;
+    weight: 18px;
+    position: relative;
+    top: 2px;
+}
+#nav-starry {
+    cursor:pointer;
+    font-weight: bolder;
+    background-image:-webkit-linear-gradient(bottom,red,#ff5f60,#c800ff); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+}
+#nav-bing {
+    color: green;
+}
+.nav-content {
+    font-weight: bold;
 }
 
 #content-outermost{
@@ -77,16 +97,17 @@ ul>li a{
 
 #myGithub{
     float:left;
-    width: 100px;
-    height: 50px;
-    font-size: 30px;
+    width: 80px;
+    height: 40px;
+    font-size: 24px;
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
 }
 #github_img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.4;
 }
 .nihong{
     /* 深色底色，浅色文字，多层浅色文字阴影，弥散大 */
