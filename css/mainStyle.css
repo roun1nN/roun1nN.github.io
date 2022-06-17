@@ -18,8 +18,10 @@ div {
 }
 html, body {
     overflow: hidden;
-
 }
+li{list-style: none;}
+a{text-decoration: none;
+           color: #000;}
 .background_image{
     filter:alpha(opacity=50);  
     -moz-opacity:0.4;  
